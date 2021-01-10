@@ -1,0 +1,7 @@
+<h1>Books#index</h1>
+<p>Find me in app/views/books/index.html.erb</p>
+<% @books.each do |book| %>
+    <%= link_to book.user.email, user_path(book.user.id) %>     
+    <p><span>タイトル: </span><%=link_to book.title, book_path(book.id) %></p>
+    <p><span>内容: </span><%=link_to book.text, book_path(book.id) %></p>
+<% end %>
