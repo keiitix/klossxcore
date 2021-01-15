@@ -12,11 +12,7 @@ Devise.setup do |config|
   config.mailer_sender = 'klossConfilem@kloss.page'
   
   require 'devise/orm/active_record'
-  config.omniauth :google_oauth2,
-                  ENV['GOOGLE_APP_ID'], 
-                  ENV['GOOGLE_APP_SECRET'], 
-                  name: :google,
-                  scope: %w(email)
+  config.omniauth :google_oauth2,ENV['GOOGLE_APP_ID'],ENV['GOOGLE_APP_SECRET'],scope: 'email', redirect_uri: "http://localhost:3000/users/auth/google_oauth2/callback"
   config.case_insensitive_keys = [:email]
   config.strip_whitespace_keys = [:email]
   config.skip_session_storage = [:http_auth]
