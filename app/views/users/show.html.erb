@@ -2,8 +2,14 @@
 <p>Find me in app/views/users/show.html.erb</p>
 <hr>
 <p><span>email: </span><%= @user.email %></p>
+<p>Writername: <%= @user.writername %></p>
+<% if @user.avatar.attached? %>
+  <%= image_tag @user.avatar %>
+<% end %>
+
 <% @books.each do |book| %>
   <hr>
   <p><span>タイトル: </span><%=link_to book.title, book_path(book.id) %></p>
 <% end %>
+<br>
 <%= link_to '情報変更', edit_user_registration_path %>
