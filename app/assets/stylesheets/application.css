@@ -13,3 +13,37 @@
  *= require_tree .
  *= require_self
  */
+ @font-face {
+    font-family: Roboto-Medium;
+    src: url('https://res.cloudinary.com/kloss/raw/upload/v1604572955/Roboto/Roboto-Medium_dsztfj.ttf'); 
+  }
+@font-face {
+    font-family: headster;
+    src: url('https://res.cloudinary.com/kloss/raw/upload/v1604562436/fonts/headster/Headster-RegularDemo_tqz2a5.ttf'); 
+  }
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('https://res.cloudinary.com/kloss/raw/upload/v1604559323/fonts/poppins/Poppins-Regular_jfm2jk.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url('https://res.cloudinary.com/kloss/raw/upload/v1604559322/fonts/poppins/Poppins-Bold_nvyags.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Medium;
+    src: url('https://res.cloudinary.com/kloss/raw/upload/v1604559323/fonts/poppins/Poppins-Medium_uvolpk.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-Bold;
+    src: url('https://res.cloudinary.com/kloss/raw/upload/v1604559320/fonts/montserrat/Montserrat-Bold_wtduqk.ttf'); 
+  }
+  @font-face {
+    font-family: FontAwesome;
+    src: url("https://use.fontawesome.com/releases/v5.15.1/css/all.css"); 
+  }
+  .icon1{
+      position: absolute;
+  }

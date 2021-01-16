@@ -10,6 +10,7 @@
   </head>
 
   <body>
+  <div class="icon1">
         <p class="notice"><%= notice %></p>
         <p class="alert"><%= alert %></p>
 
@@ -23,6 +24,8 @@
         <% end %>
           <%= link_to "Book", books_path %>
           <%= link_to "ユーザ一覧", users_path %>
+          </div>
     <%= yield %>
+
   </body>
 </html>
