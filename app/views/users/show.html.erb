@@ -3,6 +3,7 @@
 <hr>
 <p><span>email: </span><%= @user.email %></p>
 <p>Writername: <%= @user.writername %></p>
+<p>Profile: <%= @user.profile %></p>
 <% if @user.avatar.attached? %>
   <%= image_tag @user.avatar %>
 <% end %>
